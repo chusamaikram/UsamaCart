@@ -58,13 +58,12 @@ const Header = () => {
                         </div>
 
                         {/* Cart - Always visible */}
-                        <div className='px-3 py-2 rounded-md bg-gray-50'>
-                            <Link to="/cart" className="text-slate-700 hover:text-blue-600 font-medium transition-colors duration-200 flex items-center gap-2">
+                        
+                            <Link to="/cart" className="px-3 py-2 rounded-md bg-gray-50 text-slate-700 hover:text-blue-600 font-medium transition-colors duration-200 flex items-center gap-2">
                                 <span className="text-lg">🛒</span>
                                 <span className="hidden sm:inline">Cart</span>
                                 <span className='text-red-400'>({getCartItemsCount()})</span>
                             </Link>
-                        </div>
                     </div>
                 </nav>
             </div>
