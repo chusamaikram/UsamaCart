@@ -75,7 +75,7 @@ const Homepage = () => {
     }, [products, selectedCategory, searchTerm])
 
     return (
-        <section className='py-20'>
+        <section className='py-5 sm:py-10'>
             <div className="container">
                 {/* Error State */}
                 {error && (
