@@ -1,16 +1,161 @@
-# React + Vite
+# 🛒 UsamaCart – React Ecommerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+UsamaCart is a fully responsive ecommerce web application built with **React**, **Context API**, and **FakeStoreAPI**. The project focuses on modern UI/UX, state management without Redux, and real-world ecommerce functionality such as product browsing, cart management, and order summary.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+👉 https://usamacart.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🏠 Product Browsing
+
+* Responsive product grid (4 → lg, 3 → md, 2 → sm)
+* Category dropdown filter
+* Search functionality
+* Product cards with image, title, category, rating, and price
+* Hover **View More** option to open product modal
+
+### 🧩 Product Modal
+
+* Detailed product information
+* Quantity control
+* Add to cart from modal
+
+### 🛒 Cart System
+
+* Add / remove products
+* Increase or decrease quantity
+* Dynamic price calculation
+* Order summary with:
+
+  * Total price
+  * Shipping fee
+  * Tax calculation
+  * Proceed to checkout button
+
+### ⚙ State Management
+
+* Built with **useContext** (no Redux)
+* Centralized cart logic
+* Clean and scalable architecture
+
+### 📱 Responsive Design
+
+* Mobile-first approach
+* Optimized grid layout for all devices
+
+---
+
+## 🛠 Tech Stack
+
+* **React.js** – Component based UI
+* **React Router** – Client side routing
+* **Context API** – Global state management
+* **FakeStoreAPI** – Product data
+* **CSS / Tailwind – Styling
+* **Vercel** – Deployment
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+├── components/
+│   ├── Header
+│   ├── ProductCard
+│   ├── ProductModal
+│   ├── ProductCardSkeleton
+│   
+│
+├── store/
+│   └── CartContext.jsx
+│   └── FilterContext.jsx
+
+│
+├── pages/
+│   ├── HomePage.jsx
+│   └── CartPage.jsx
+│
+└── App.jsx
+```
+
+---
+
+## 🔧 Installation
+
+1. Clone repository
+
+```bash
+git clone https://github.com/chusamaikram/UsamaCart
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Run development server
+
+```bash
+npm run dev
+```
+
+---
+
+## 🌐 API Used
+
+This project uses **FakeStoreAPI** for product data:
+[https://fakestoreapi.com](https://fakestoreapi.com)
+
+Endpoints used:
+
+* `/products`
+* `/products/categories`
+* `/products/:id`
+
+---
+
+## 🎯 Next Goals
+
+* ✅ Checkout functionality
+* ✅ Theme toggler (Dark/Light mode)
+* ⏳ User authentication UI
+* ⏳ Persist cart with localStorage
+* ⏳ Toast notifications
+
+---
+
+## 💡 What I Learned
+
+* Managing global state with **useContext**
+* Building reusable React components
+* Handling modals and dynamic UI
+* Responsive layouts
+* API integration
+* Real ecommerce cart logic
+
+---
+
+## 🤝 Contributing
+
+Contributions and suggestions are welcome! Feel free to fork this repository and improve the project.
+
+---
+
+## 📄 License
+
+This project is for learning purposes.
+
+---
+
+### 👨‍💻 Author
+
+**Usama**
+Frontend Developer | React Enthusiast
