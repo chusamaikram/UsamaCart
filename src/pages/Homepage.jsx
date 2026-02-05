@@ -125,6 +125,8 @@ const Homepage = () => {
                         <p className="text-slate-400">Try adjusting your search or category filter</p>
                     </div>
                 )}
+
+                <p className='text-center text-slate-500 text-lg font-medium mt-10'>No more results </p>
             </div>
         </section>
     )
