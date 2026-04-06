@@ -19,7 +19,7 @@ const Header = () => {
         <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100 py-3 sm:px-6">
             <div className="container">
                 <nav className="flex items-center justify-between">
-                    <Link to="/" className="text-lg sm:text-2xl font-bold text-slate-900 hover:text-blue-400 transition-colors duration-200">
+                    <Link to="/" className="text-lg sm:text-4xl font-bold text-slate-900 hover:text-blue-400 transition-colors duration-200" aria-label='logo'>
                         <div className='flex items-center gap-1'>
                             <span> 🛒 </span>
                             <span>UsamaCart</span>

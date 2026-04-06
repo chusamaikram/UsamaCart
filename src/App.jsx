@@ -4,6 +4,7 @@ import Homepage from "./pages/Homepage"
 import CartPage from "./pages/CartPage"
 import { FilterProvider } from "./store/FilterContext"
 import { CartProvider } from "./store/CartContext"
+import Footer from './components/Foooter'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Homepage />} />
             <Route path="/cart" element={<CartPage />} />
           </Routes>
+          <Footer/>
       </FilterProvider>
     </CartProvider>
   )
