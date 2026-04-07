@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useCart } from '../store/CartContext'
+import { useCart } from '../context/CartContext'
 
 const ProductModal = ({ product, isOpen, onClose }) => {
   const [quantity, setQuantity] = useState(1)

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useFilter } from '../store/FilterContext'
-import { useCart } from '../store/CartContext'
+import { useFilter } from '../context/FilterContext'
+import { useCart } from '../context/CartContext'
 
 const Header = () => {
     const { searchTerm, setSearchTerm, selectedCategory, setSelectedCategory } = useFilter()

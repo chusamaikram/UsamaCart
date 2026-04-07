@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ProductModal from './ProductModal'
-import { useCart } from '../store/CartContext'
+import { useCart } from '../context/CartContext'
 
 const ProductCard = ({ product }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)

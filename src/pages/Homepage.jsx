@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import React from 'react'
 import ProductCard from '../components/ProductCard'
 import ProductCardSkeleton from '../components/ProductCardSkeleton'
-import { useFilter } from '../store/FilterContext'
+import { useFilter } from '../context/FilterContext'
 
 const Homepage = () => {
     const [products, setProducts] = useState([])
